@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I-GATE Computer Science - GATE, PSU, NET</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://kit.fontawesome.com/4b65e2b929.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="img/favicon.ico" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+        <img src="/img/logo.png" class = "logo" width="175px">
+        <div class="listItems">
+            <ul>
+                <li>about us</li>
+                <li>courses</li>
+                <li class="red-back">online class</li>
+                <li>toppers</li>
+                <li>gallery</li>
+                <li>videos</li>
+                <li>test series</li>
+                <li>contact us</li>
+            </ul>
+        </div>
+        </div>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="img/banner1.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/banner1a.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/banner2.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/banner3.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/banner5.jpeg" alt=""></div>
+              <div class="swiper-slide"><img src="img/banner6.jpeg" alt=""></div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+    </div>
+
+    <!-- Courses Section -->
+
+    <div class="courses">
+        <i class="pe-7s-display2"></i>
+        <i class="fa-light fa-clipboard-list"></i>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</body>
+<script>
+    const swiper = new Swiper('.swiper', {
+        autoplay: {
+            delay:3000, 
+            disableOnInteraction: false, 
+        },
+  // Optional parameters
+  loop: true,
+
+  // If we need pagination
+  
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+</script>
+</html>
